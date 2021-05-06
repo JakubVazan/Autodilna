@@ -49,11 +49,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+$route['default_controller'] = 'Controller';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
 
 
+$route['domu'] = 'Controller';
+$route['zamestnanci'] = 'Controller/zamestnanci';
+$route['zakaznici'] = 'Controller/zakaznici';
+$route['opravy'] = 'Controller/opravy';
+$route['vypis_opravy'] = 'Controller/opravy';
+$route['upraveno'] = 'Controller/updated';
+$route['vlozeno'] = 'Controller/inserted';
+$route['odstraneno'] = 'Controller/deleted';
+$route['upraveno_zakaznici'] = 'Controller/updated_zakaznici';
+$route['vlozeno_zakaznici'] = 'Controller/inserted_zakaznici';
+$route['odstraneno_zakaznici'] = 'Controller/deleted_zakaznici';
 
+$route['odstraneno_opravy'] = 'Controller/deleted_opravy';
+$route['upraveno_opravy'] = 'Controller/updated_opravy';
+$route['vlozeno_opravy'] = 'Controller/inserted_opravy';
 
-
-
-$route['default_controller'] = 'hlavni_controller/PrvniVypis';
-$route['prihlaseni'] = 'auth';
+$route['prihlaseni'] = 'auth/login';
+$route['odhlaseni'] = 'auth/logout';

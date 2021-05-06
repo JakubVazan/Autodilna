@@ -1,6 +1,6 @@
-RewriteEngine on
+RewriteEngine on 
 
-RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond $1 !^(index\.php|resources|robots|.txt)
 
 RewriteCond %{REQUEST_FILENAME} !-f
 
